@@ -1,0 +1,33 @@
+{
+  "name": "gazdileszek",
+  "version": "1.0.0",
+  "description": "The best site to find your loved pet. Sell, buy chat with other owners.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "^0.11.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morph899/gazdileszek.git"
+  },
+  "author": "Mate Kertesz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Morph899/gazdileszek/issues"
+  },
+  "homepage": "https://github.com/Morph899/gazdileszek",
+  "dependencies": {
+    "config": "^1.12.0",
+    "ect": "^0.5.9",
+    "koa": "^0.19.1",
+    "koa-bodyparser": "^1.5.0",
+    "koa-router": "^4.3.2",
+    "koa-static": "^1.4.9",
+    "koa-static-folder": "^0.1.5",
+    "koa-views": "^3.0.0",
+    "waterline": "^0.10.21"
+  }
+}
