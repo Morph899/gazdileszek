@@ -1,19 +1,21 @@
 module.exports = function(app) {
 	var Router 		= require('koa-router'), 
-		indexCtrl 	= require('../controllers/index');
+		indexCtrl 	= require('../controllers/index'),
+		signupCtrl 	= require('../controllers/signup');
 
 
 	var router = new Router();
 
 	router
-		.get('/', indexCtrl.index)
+		.get('/', indexCtrl.view)
 		.get('/link/:id', function *(next) {
 			console.log('/link/'+this.params.id);
 			this.body = "Get value from params : "+ this.params.id;
 		})
 		.get('/render/view', indexCtrl.view)
 		.get('/view/:id', indexCtrl.test)
-		.get('/view/:id', indexCtrl.test);
+		.get('/view/:id', indexCtrl.test)
+		.get('/signup', signupCtrl.view);
 
 	app.use(router.middleware());
 };
