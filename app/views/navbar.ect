@@ -10,8 +10,13 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <form class="navbar-form navbar-right ng-pristine ng-valid" role="search">
-            <a class="btn btn-default" data-toggle="modal" href="/register">Regisztráció</a>
-            <a class="btn btn-success" data-toggle="modal" href="/signup">Bejelentkezés</a>
+            <% if @viewname != 'signup' : %>
+              <a class="btn btn-default" data-toggle="modal" href="/signup">Regisztráció</a>
+            <% end %>
+
+            <% if @viewname != 'login' : %>
+              <a class="btn btn-success" data-toggle="modal" href="/login">Bejelentkezés</a>
+            <% end %>
           </form>
         </div>
       </div>
