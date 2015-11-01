@@ -2,7 +2,8 @@ module.exports = function(app) {
 	var Router 		= require('koa-router'), 
 		indexCtrl 	= require('../controllers/index'),
 		signupCtrl 	= require('../controllers/signup'),
-		loginCtrl 	= require('../controllers/login');
+		loginCtrl 	= require('../controllers/login'),
+		forgetCtrl 	= require('../controllers/forget');
 
 
 	var router = new Router();
@@ -17,7 +18,8 @@ module.exports = function(app) {
 		.get('/view/:id', indexCtrl.test)
 		.get('/view/:id', indexCtrl.test)
 		.get('/signup', signupCtrl.view)
-		.get('/login', loginCtrl.view);
+		.get('/login', loginCtrl.view)
+		.get('/forgetpassword', forgetCtrl.view);
 
 	app.use(router.middleware());
 };
