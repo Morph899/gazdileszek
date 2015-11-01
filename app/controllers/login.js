@@ -1,6 +1,6 @@
 module.exports = {
 	view: function *signup(next) {
-		yield this.render('signup.ect', {
+		yield this.render('login.ect', {
 			title: 'Gazdileszek.com',
 		    viewname:'login'
 		});
