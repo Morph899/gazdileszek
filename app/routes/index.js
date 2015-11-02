@@ -3,7 +3,8 @@ module.exports = function(app) {
 		indexCtrl 	= require('../controllers/index'),
 		signupCtrl 	= require('../controllers/signup'),
 		loginCtrl 	= require('../controllers/login'),
-		forgetCtrl 	= require('../controllers/forget');
+		forgetCtrl 	= require('../controllers/forget'),
+		searchCtrl 	= require('../controllers/search');
 
 
 	var router = new Router();
@@ -19,7 +20,8 @@ module.exports = function(app) {
 		.get('/view/:id', indexCtrl.test)
 		.get('/signup', signupCtrl.view)
 		.get('/login', loginCtrl.view)
-		.get('/forgetpassword', forgetCtrl.view);
+		.get('/forgetpassword', forgetCtrl.view)
+		.get('/search', searchCtrl.view)
 
 	app.use(router.middleware());
 };
