@@ -1,5 +1,6 @@
-<div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+<div class="topbar">
+<div class="navbar navbar-default">
+      <div class="container-fluid">
         <div class="navbar-header">
           <a href="../" class="navbar-brand">Gazdileszek</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -20,9 +21,10 @@
             <% end %>
 
             <% if @viewname != 'login' : %>
-              <a class="btn btn-default" data-toggle="modal" href="/login">Bejelentkezés</a>
+              <a class="btn btn-success" data-toggle="modal" href="/login">Bejelentkezés</a>
             <% end %>
           </form>
         </div>
       </div>
     </div>
+</div>

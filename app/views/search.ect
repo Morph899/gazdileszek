@@ -1,10 +1,12 @@
 <% extend 'app/views/layouts/search_template.ect' %>
 <% include 'app/views/navbar.ect' %>
-<div class="container mainwrap">
-	<div class="col-xs-7 searchcont">
+<div class="mainwrap">
+
+	<div class="col-xs-4 resultcont">
+			<div class="col-xs-12 searchcont">
 		<h3><span>Keresés:</span></h3>
-		<div class="col searchwrap">
-			<div class="col-xs-6">
+		<div class="row searchwrap">
+			<div class="col-xs-12">
 				<div class="col">
 					<div class="input-group">
           				<label for="recipient-name" class="control-label">Kor/Hónap</label>
@@ -18,24 +20,8 @@
         			</div>
         		</div>
         	</div>
-        	<div class="col-xs-6">
+        	<div class="col-xs-12">
         		<div class="col">
-        			<div class="input-group">
-          				<label for="recipient-name" class="control-label">Faj:</label>
-          				<div class="dropdown">
-                  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  				Faj
-                    			<span class="caret"></span>
-                  			</button>
-                  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    			<li><a ng-click="onRaceClick($index)">Sample1</a></li>
-                    			<li><a ng-click="onRaceClick($index)">Sample2</a></li>
-                    			<li><a ng-click="onRaceClick($index)">Sample3</a></li>
-                  			</ul>
-                		</div>
-        			</div>
-        		</div>
-        	        		<div class="col">
         			<div class="input-group">
           				<label for="recipient-name" class="control-label">Faj:</label>
           				<div class="dropdown">
@@ -52,7 +38,7 @@
         			</div>
         		</div>
 
-        		        		<div class="col">
+        	    <div class="col">
         			<div class="input-group">
           				<label for="recipient-name" class="control-label">Faj:</label>
           				<div class="dropdown">
@@ -70,32 +56,36 @@
         		</div>
         	</div>
      	</div>
+     	<hr>
+     	<div class="searchbtncont">
+        	<button type="button" class="btn btn-success">
+        		<span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Keresés
+        	</button>
+        </div>
 	</div>
-	<div class="col-xs-5"></div>
-
-	<div class="col-xs-12 resultcont">
+		<div class="col-xs-12">
 		<h3><span>Prémium Hirdetések:</span></h3>
-		<div class="col-lg-2 col-xs-4 item">
+
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="https://c1.staticflickr.com/3/2758/4521073052_03cda106a6.jpg">
 			  <div class="textwrap">
 			    <h5><span>Johnsy</span></h5>
-			    <div class="text"><span>Eladó ez a rosszaság</span></div>
 			  </div>
 			</div>
 		</div>
 
-				<div class="col-lg-2 col-xs-4 item">
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="http://images6.fanpop.com/image/photos/32500000/dog-dogs-32541258-500-500.jpg">
 			  <div class="textwrap">
 			    <h5><span>Johnsy</span></h5>
-			    <div class="text"><span>Eladó ez a rosszaság</span></div>
+
 			  </div>
 			</div>
 		</div>
 
-				<div class="col-lg-2 col-xs-4 item">
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="https://lh3.googleusercontent.com/1JDrZaNchOF9wpPfQKLZHZ1rAxpLPTl8S1R05ADJ6CpxHPcnzonIjz97r0yJi9Ib7A=h900">
 			  <div class="textwrap">
@@ -105,7 +95,7 @@
 			</div>
 		</div>
 
-				<div class="col-lg-2 col-xs-4 item">
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="http://creativefan.com/files/2011/01/dogs-23-500x500.jpg">
 			  <div class="textwrap">
@@ -115,7 +105,7 @@
 			</div>
 		</div>
 
-		<div class="col-lg-2 col-xs-4 item">
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="http://friendlydogcollars.com.au/wp-content/uploads/2015/08/ServiceDog.703-500x500.jpg">
 			  <div class="textwrap">
@@ -125,7 +115,7 @@
 			</div>
 		</div>
 
-				<div class="col-lg-2 col-xs-4 item">
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="http://egift.ie/image/cache/data/zombie-foot-dog-toy/zombie-foot-dog-toy3-500x500.jpg">
 			  <div class="textwrap">
@@ -135,7 +125,7 @@
 			</div>
 		</div>
 
-				<div class="col-lg-2 col-xs-4 item">
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="http://www.thewoofshop.com.au/image/cache/data/Dogs/Collars_Harnesses_Leashes/Collars/ZeeDog_Marshmallow_Collar_02-500x500_0.png">
 			  <div class="textwrap">
@@ -145,14 +135,172 @@
 			</div>
 		</div>
 
-		<div class="col-lg-2 col-xs-4 item">
+		<div class="col-lg-4 col-xs-4 item">
 			<div class="row wrap">
 			  <img src="http://giantschnauzergear.com/image/cache/data/STRONG/ATTILA/Brown-attila-leather-dog-harness-2_giantschnauzer_gear-500x500.jpg">
-<div class="textwrap">
+			  <div class="textwrap">
 			    <h5><span>Szagi</span></h5>
 			    <div class="text"><span>Eladó ez a rosszaság</span></div>
 			  </div>
 			</div>
 		</div>
+	</div>
+	</div>
+	<div class="col-xs-8 searchitemcont">
+		<div class="col-xs-12 promoimg">
+			<img>
+			<h4><span>Felhasználók Fotói</span></h4>
+		</div>
+		<div class="col-xs-12 optionbar">
+    			  <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></button>
+              <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></button>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rendezés
+                <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Ár szerint csökkenő</a></li>
+                  <li><a href="#">Ár szerint növekvő</a></li>
+                </ul>
+              </div>
+            </div>
+    		  </div>
+		<nav class="pagin">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+		<div class="row item">
+			<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+
+				<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+
+				<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+
+				<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+						<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+						<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+						<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+						<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+								<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+								<div class="row item">
+								<div class="col-xs-12"> Tibike</div>
+			<div class="col-xs-2 iconsect">
+				<img src="http://aaronwomack.com/wp-content/uploads/2011/01/SH-2-dog-ending-question-250x250.jpg">
+			</div>
+			<div class="col-xs-10 desc">
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+			</div>
+		</div>
+
+				<nav class="pagin">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+	</div>
+	<div class="col-xs-12 footer">
+		Ez egy footer
 	</div>
 </div>

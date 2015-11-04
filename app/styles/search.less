@@ -3,7 +3,6 @@ body {
 }
 
 .mainwrap {
-	margin-top:80px;
 
 	h3 {
 	  span {
@@ -15,8 +14,9 @@ body {
 	}
 
 	.searchcont {
-	  background-color:#4e5d6c;
-	  height:300px;
+	  margin:0;
+	  background-color:#A2C293;
+	  padding-bottom:15px;
 
 	  h3 {
 	    span {
@@ -28,12 +28,29 @@ body {
 	    .input-group {
 	      width: 100%;
 	    }
+
+	    .dropdown{
+	    	.btn {
+	    		width: 100%;
+	    	}
+	    }
+	  }
+
+	  .searchbtncont {
+	  		margin-top:10px;
+	  		.btn {
+	  			float: none;
+    			display: block;
+    			margin-left: auto;
+    			margin-right: auto;
+	  			width: 150px;
+	  		}
 	  }
 	}
 
 	.resultcont {
+	  padding:0;
 	  background-color:white;
-
 
 	  .item {
 	    position: relative;
@@ -51,7 +68,7 @@ body {
             right: 10px;
             left: 10px;
             bottom:10px;
-
+            display: none;
 
 
             h5 {
@@ -65,6 +82,7 @@ body {
             }
 
             .text {
+
               margin-bottom: 10px;
               span {
                 padding: 10px;
@@ -73,5 +91,74 @@ body {
 	      }
 	    }
 	  }
+	}
+
+	.searchitemcont {
+		.promoimg {
+			padding: 0;
+			img {
+				content: url(../assets/labrador-retriever-gun-dog-pet-animal-winter-snow-covered-trees-outdoor-1920x1200.jpg);
+				width:100%
+			}
+
+			h4 {
+				position: absolute;
+				z-index:1;
+				bottom:10;
+				left: 10px;
+
+				span {
+					background-color: black;
+					padding: 5px;
+					color: white;
+				}
+			}
+		}
+		.optionbar {
+			margin-top: 5px;
+			padding:0;
+			height: 40px;
+		 	button {
+		  		height: 100%;
+		  	}
+		}
+
+		.pagin {
+			text-align: center;
+
+			.pagination {
+				margin: 5px;
+				li {a{
+				  color: black;
+				  }
+				}
+			}
+		}
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	  background-color: #E2E6DA;
+	  .item {
+	    margin: 5px;
+	    margin-left:0;
+	    margin-right:0;
+	    background-color: white;
+	  	margin-bottom:10px;
+	    img {
+	      width: 100%;
+	    }
+
+	    .iconsect {
+	      margin-bottom: 5px;
+	    }
+
+	    .desc {
+	      margin-bottom: 5px;
+	    }
+	  }
+	}
+
+		.footer {
+	  background-color:#A2C293;
+	  height:100px;
 	}
 }
