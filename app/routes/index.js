@@ -5,6 +5,7 @@ module.exports = function(app) {
 		loginCtrl 	= require('../controllers/login'),
 		forgetCtrl 	= require('../controllers/forget'),
 		searchCtrl 	= require('../controllers/search');
+		profileCtrl = require('../controllers/profile');
 
 
 	var router = new Router();
@@ -22,6 +23,7 @@ module.exports = function(app) {
 		.get('/login', loginCtrl.view)
 		.get('/forgetpassword', forgetCtrl.view)
 		.get('/search', searchCtrl.view)
+		.get('/profile', profileCtrl.view)
 
 	app.use(router.middleware());
 };
