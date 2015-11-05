@@ -29,7 +29,6 @@
     "koa-static": "^1.4.9",
     "koa-static-folder": "^0.1.5",
     "koa-views": "^3.0.0",
-    "mongodb": "^2.0.47",
-    "waterline": "^0.10.21"
+    "mongoose": "^4.2.4"
   }
 }
