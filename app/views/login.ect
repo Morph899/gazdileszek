@@ -2,21 +2,27 @@
 <% include 'app/views/navbar.ect' %>
 <div class="container-fluid mainwrap">
 	<div class="loginpanel">
-		<div>
-			<h5>Bejelentkezés</h5>
-			<form>
-				<input placeholder="Felhasználónév" type="text">
-				<input placeholder="Jelszó" type="password">
-				<br/>
-				<button type="submit" class="btn btn-success submitbtn">Bejelentkezés</button>
-			</form>
-			<div class="postoptions">
-				<p>
-				<a href="/forgetpassword">Elfelejtett jelszó</a>
-				<br/>
-					<a href="/signup">Regisztrálj az odalunkon!</a>
-				</p>
-			</div>
-		</div>
+		<h5>Bejelentkezés</h5>
+		<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Felhasználónév</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="pl Robin">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">Jelszó</label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="123456">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10" style="text-align:right">
+      <button type="submit" class="btn btn-success">Bejelentkezés</button>
+    </div>
+  </div>
+</form>
 	</div>
 </div>

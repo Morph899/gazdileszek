@@ -22,7 +22,7 @@ body {
 	.topbar {
 	  height:100px;
 	  position: relative;
-	  background-color: rgb(244, 219, 138);
+	  background-color: #FFD18C;
 
 	  .navbar {
 	    background-color: inherit;
@@ -30,10 +30,42 @@ body {
 	    position:absolute;
 	    bottom:0;
 	    width: 100%;
+
+	    .links {
+	    	li {
+	    		a {
+	    			color: black;
+	    		}
+	    	}
+	    }
+
+	    .topnavi {
+	    	.navbar-header {
+	    		a {
+	    			color: #5C330A;
+	    		}
+	    	}
+	    	ul {
+	    		li {
+	    			a {
+	    				color: #5C330A;
+	    			}
+	    		}
+	    	}
+	    }
+
 	    .navbar-brand {
 	      font-family:Animal;
 	      font-size:45px;
 	      color: #128112;
+
+	      &.small {
+	      	font-family: Verdana;
+	      	a {
+	      		color: #5C330A;
+	      	}
+	      	font-size:15px;
+	      }
 	    }
 	   }
 	}
