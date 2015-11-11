@@ -1,3 +1,5 @@
+@import "stylevariables.less";
+
 @font-face {
   font-family: Animal;
   src: url(PuppyBellies.ttf);
@@ -22,13 +24,14 @@ body {
 	.topbar {
 	  height:100px;
 	  position: relative;
-	  background-color: #FFD18C;
+	  background-color: @gazdiyellow;
 
 	  .navbar {
 	    background-color: inherit;
 	    margin-bottom:0;
 	    position:absolute;
 	    bottom:0;
+	    top:0;
 	    width: 100%;
 
 	    .links {
@@ -44,15 +47,16 @@ body {
 	    }
 
 	    .topnavi {
+	    	background-color: @verydarkbrown;
 	    	.navbar-header {
 	    		a {
-	    			color: #5C330A;
+	    			color: white;
 	    		}
 	    	}
 	    	ul {
 	    		li {
 	    			a {
-	    				color: #5C330A;
+	    				color: white;
 
 	    				&:hover {
 	    					background-color: initial;
@@ -60,6 +64,10 @@ body {
 	    			}
 	    		}
 	    	}
+	    }
+
+	    .logonavi {
+	    	margin-top: 4px;
 	    }
 
 	    .navbar-brand {
