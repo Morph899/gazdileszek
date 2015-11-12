@@ -4,16 +4,14 @@ body {
 	background-color:#D4C090;
 }
 
-.promobox {
+.main {
 	padding:0;
 	overflow:hidden;
-	height: 400px;
 	background-color: #E2E6DA;
 	.sidepanel {
 
 		background: @lightgreen;
 		background-position: right bottom;
-		height:100%;
 
 		h3 {
 			span {
@@ -39,12 +37,72 @@ body {
 	}
 
 	.contentpanel {
-		height:100%;
+
+		h2 {
+		margin-top: 20px;
+		}
 		padding-top: 15px;
-		
+		background-color: white;
 		img {
 			width: 100%;
 		}
+
+					.greetcont {
+			 	background-color: white;
+				position: relative;
+				height: 80px;
+				h2 {
+					float: left;
+					padding: 10px;
+					font-weight: bold;
+					padding-bottom:0;
+					padding-top:0;
+				}
+				.askbtn {
+					float: right;
+					height: 100%;
+				}
+			}
+
+						.mainoptions {
+				background-color: white;
+				.heading {
+				}
+				.item {
+					background-color:#999;
+					height:150px;
+				}
+
+				.item:nth-of-type(odd) {
+					background-color:#333;
+				}
+			}
+
+						.heading {
+				
+
+				h4 {
+					margin:0;
+					padding:10px;
+					color: black;
+					font-weight:bold;
+				}
+			}
+
+			.subrow {
+				background-color: white;
+				margin-bottom: 15px;
+				padding:0;
+				padding-bottom:15px;
+				.desctext {
+					text-align:justify;
+
+				}
+
+				.detail {
+					margin-top: 10px;
+				}
+			}
 	}
 }
 
@@ -88,63 +146,6 @@ body {
 			}
 		}
 
-		&.rightpanel {
-			border: none;
-			background-color: #E2E6DA;
-			margin-bottom:0;
-			
-			.greetcont {
-			 	background-color: white;
-				position: relative;
-				height: 80px;
-				h2 {
-					float: left;
-					padding: 10px;
-					font-weight: bold;
-					padding-bottom:0;
-					padding-top:0;
-				}
-				.askbtn {
-					float: right;
-					height: 100%;
-				}
-			}
-
-			.heading {
-				
-
-				h4 {
-					margin:0;
-					padding:10px;
-					color: black;
-					font-weight:bold;
-				}
-			}
-			.mainoptions {
-				background-color: white;
-				.heading {
-				}
-				.item {
-					background-color:#999;
-					height:150px;
-				}
-
-				.item:nth-of-type(odd) {
-					background-color:#333;
-				}
-			}
-
-			.subrow {
-				background-color: white;
-				margin-bottom: 15px;
-				padding:0;
-				padding-bottom:15px;
-				.desctext {
-					text-align:justify;
-
-				}
-			}
-		}
 	}
 	
 }
