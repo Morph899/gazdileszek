@@ -7,17 +7,31 @@ body {
 .main {
 	padding:0;
 	overflow:hidden;
+			background-color:@lightgreen;
+	.topbanerholder {
+		text-align: center;
+		padding:0;
+		.topbanner {
+			width:100%;
+		}
+	}
 	
 	.sidepanel {
-
 		.news {
-			background-color:#603BC4;
+			h3 {
+				font-weight: bold;
+			}
+			background-color:@lightgreen;
 
 			ul {
 				li {
 		  			margin-bottom:10px;
-		  			color: white;
+		  			color: black;
 		  		}
+		  	}
+
+		  	.applysection {
+		  		text-align: center;
 		  	}
 		}
 
@@ -42,10 +56,11 @@ body {
 		  		}
 
 		  		li:nth-of-type(odd) {
-					background-color:#DBDBDB;
+					background-color: @lightgreen;
+					color: white;
 				}
 				li:nth-of-type(even) {
-					background-color:#CFCFCF;
+					background-color:@lightgreen2;
 				}
 		  	}
 
@@ -56,13 +71,12 @@ body {
 
 		h3 {
 			span {
-				background-color: black;
-				color:white;
+				color:black;
 			}
 		}
 
 		.maincheading{
-		background-color: @verydarkbrown;
+		background-color: @darkgreen;
 			span {
 				color: white;
 				font-weight:bold;
@@ -73,10 +87,6 @@ body {
 	}
 
 	.contentpanel {
-
-		.topbanner {
-			width: 100%;
-		}
 
 		.facebooklike {
 			margin-bottom: 20px;
