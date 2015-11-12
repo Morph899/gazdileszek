@@ -10,6 +10,40 @@ body {
 	background-color: #E2E6DA;
 	.sidepanel {
 
+		.news {
+			background-color:#603BC4;
+
+			ul {
+				li {
+		  			margin-bottom:10px;
+		  			color: white;
+		  		}
+		  	}
+		}
+
+		.maincategories {
+			ul {
+			margin:0;
+			padding:0;
+				li {
+					padding:5px;
+					list-style:none;
+
+		  			a {
+		  			color: white;
+		  			}
+		  		}
+
+		  		li:nth-of-type(odd) {
+					background-color:#777;
+				}
+				li:nth-of-type(even) {
+					background-color:#999;
+				}
+		  	}
+
+		}
+
 		background: @lightgreen;
 		background-position: right bottom;
 
@@ -19,24 +53,19 @@ body {
 				color:white;
 			}
 		}
-		.holder {
-		  background-color:rgba(0,0,0,0.5);
-		}
+
 		h4 {
 		  color: white;
 		  padding:10px;
 		}
-
-		ul {
-
-		  	li {
-		  		margin-bottom:10px;
-		  		color: white;
-		  	}
-		  }
 	}
 
 	.contentpanel {
+
+		.jumbotron {
+			border: 1px solid black;
+			background-image:url(http://www.wholepetshopwa.com/wp-content/uploads/2013/12/pets-1024x600.png);
+		}
 
 		h2 {
 		margin-top: 20px;
@@ -64,10 +93,18 @@ body {
 				}
 			}
 
-						.mainoptions {
-				background-color: white;
+			.mainoptions {
 				.heading {
+					h2 {
+						color:black;
+					}
+
+					h4 {
+						color: #777;
+					}
 				}
+				background-color: #D3DECE;
+
 				.item {
 					background-color:#999;
 					height:150px;
